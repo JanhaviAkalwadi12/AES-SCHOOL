@@ -1,0 +1,13 @@
+{
+  "name": "school-website",
+  "version": "1.0.0",
+  "description": "School Website",
+  "scripts": {
+    "dev": "npx live-server --port=3000",
+    "serve": "npx serve . -l 3000",
+    "start": "npx live-server --port=3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,240 @@
+/* ==========================================================================
+   SMT. ANNAPURNA C. HIREMATH ENGLISH MEDIUM PRIMARY / HIGH SCHOOL
+   Responsive Stylesheet & Mobile UI
+   ========================================================================== */
+
+/* --- Large Screens & Laptops (under 1180px) --- */
+@media (max-width: 1180px) {
+  .top-bar {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background: var(--bg-card);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-left: 1px solid var(--border-subtle);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 90px 24px 40px 24px;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.25);
+    transition: right var(--transition-normal);
+    overflow-y: auto;
+    z-index: 9998;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+
+  .nav-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: var(--bg-tertiary);
+    margin: 6px 0 10px 12px;
+    display: none;
+  }
+
+  .nav-item.dropdown-open .nav-dropdown {
+    display: block;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .hamburger-btn.active .hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .hamburger-btn.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.active .hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+/* --- Tablets & Medium Screens (under 1024px) --- */
+@media (max-width: 1024px) {
+  .leadership-spotlight {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .leader-photo-wrapper {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .quote-icon {
+    margin: 0 auto 16px auto;
+  }
+  .leader-meta {
+    text-align: center;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* --- Mobile Devices (under 768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --container-padding: 18px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-lg {
+    padding: 80px 0;
+  }
+
+  .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section {
+    min-height: 85vh;
+    padding: 100px 0 60px 0;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* Timeline single column on mobile */
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left !important;
+  }
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  .timeline-dot {
+    left: 11px !important;
+    right: auto !important;
+  }
+
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  body {
+    padding-bottom: 60px;
+  }
+
+  .floating-actions {
+    bottom: 75px;
+    right: 18px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .campus-map-container {
+    min-height: 400px;
+  }
+
+  .campus-base-img {
+    height: 420px;
+  }
+  
+  .hotspot-pin {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .hotspot-modal {
+    position: fixed;
+    bottom: 75px;
+    left: 16px;
+    right: 16px;
+    max-width: none;
+  }
+
+  .gallery-masonry {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .gallery-item, .gallery-item.item-tall, .gallery-item.item-wide, .gallery-item.item-big {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    height: 240px;
+  }
+
+  .lightbox-nav-btn {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .lightbox-prev-btn {
+    left: 10px;
+  }
+
+  .lightbox-next-btn {
+    right: 10px;
+  }
+
+  .lightbox-topbar {
+    left: 16px;
+    right: 16px;
+    top: 14px;
+  }
+}
+
+/* --- Print Stylesheet --- */
+@media print {
+  .site-header, .site-footer, .floating-actions, .mobile-bottom-bar, #site-preloader {
+    display: none !important;
+  }
+  body {
+    color: #000000;
+    background: #FFFFFF;
+  }
+}

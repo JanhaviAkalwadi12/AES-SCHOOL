@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_art-craft-studio" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A044E" />
+      <stop offset="100%" stop-color="#C026D3" />
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3C969" />
+      <stop offset="100%" stop-color="#D9A441" />
+    </linearGradient>
+    <radialGradient id="glow_art-craft-studio" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </radialGradient>
+    <pattern id="grid_art-craft-studio" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#grad_art-craft-studio)"/>
+  <rect width="800" height="500" fill="url(#glow_art-craft-studio)"/>
+  <rect width="800" height="500" fill="url(#grid_art-craft-studio)"/>
+  
+  <!-- Decorative Circles -->
+  <circle cx="700" cy="100" r="160" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="2"/>
+  <circle cx="700" cy="100" r="120" fill="none" stroke="rgba(217, 164, 65, 0.2)" stroke-dasharray="6,6" stroke-width="2"/>
+  <circle cx="120" cy="420" r="140" fill="none" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1.5"/>
+  
+  <!-- Floating Card Glass Backdrop -->
+  <rect x="40" y="35" width="720" height="430" rx="24" fill="rgba(7, 26, 61, 0.5)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5"/>
+  
+  <!-- Badge -->
+  <rect x="75" y="65" width="200" height="32" rx="16" fill="rgba(217, 164, 65, 0.2)" stroke="#D9A441" stroke-width="1"/>
+  <text x="175" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F3C969" text-anchor="middle" letter-spacing="1.5">ARTS &amp; CRAFTS</text>
+  
+  <!-- Icon Center Visual -->
+  <g transform="translate(540, 140)">
+    <circle cx="80" cy="80" r="70" fill="rgba(255,255,255,0.08)" stroke="rgba(217,164,65,0.4)" stroke-width="2"/>
+    <circle cx="80" cy="80" r="55" fill="rgba(7,26,61,0.6)"/>
+    <circle cx="80" cy="80" r="35" fill="none" stroke="#EC4899" stroke-width="4"/><circle cx="68" cy="70" r="5" fill="#F3C969"/><circle cx="88" cy="68" r="5" fill="#38BDF8"/><circle cx="95" cy="85" r="5" fill="#10B981"/><circle cx="80" cy="95" r="5" fill="#8B5CF6"/>
+  </g>
+  
+  <!-- Title & Subtitle -->
+  <text x="75" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">
+    Creative Arts &amp; Culture Studio
+  </text>
+  <text x="75" y="265" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" fill="rgba(255,255,255,0.85)">
+    Fine arts, clay modeling, theatre &amp; cultural ateliers
+  </text>
+  
+  <!-- Divider -->
+  <line x1="75" y1="320" x2="725" y2="320" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  
+  <!-- Footer Info -->
+  <text x="75" y="375" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#F3C969" letter-spacing="2">
+    LEARN • GROW • LEAD
+  </text>
+  <text x="75" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="500" fill="rgba(255,255,255,0.7)">
+    Smt. Annapurna C. Hiremath English Medium School, Alnavar
+  </text>
+  <text x="725" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="end">
+    AES Campus • Dist. Dharwad
+  </text>
+</svg>
