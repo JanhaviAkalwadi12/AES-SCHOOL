@@ -2,6 +2,18 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/about", "destination": "/pages/about.html" },
+    { "source": "/academics", "destination": "/pages/academics.html" },
+    { "source": "/admissions", "destination": "/pages/admissions.html" },
+    { "source": "/beyond-academics", "destination": "/pages/beyond-academics.html" },
+    { "source": "/student-life", "destination": "/pages/student-life.html" },
+    { "source": "/facilities", "destination": "/pages/facilities.html" },
+    { "source": "/sports", "destination": "/pages/sports.html" },
+    { "source": "/news-media", "destination": "/pages/news-media.html" },
+    { "source": "/mandatory-disclosure", "destination": "/pages/mandatory-disclosure.html" },
+    { "source": "/contact", "destination": "/pages/contact.html" }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
